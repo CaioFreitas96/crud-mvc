@@ -8,5 +8,6 @@ Sistema de anotação de tarefas, com as funcionalidade do (CRUD), feito em arqu
 
 ## Execução
 - Copie o script do arquivo create_bd.txt na sua IDE MySQL para a criação do banco de dados do sistema.
+- Faça o download do zip do projeto e extraia ele dentro da pasta htdocs do xampp, path: C:\xampp\htdocs  
 - Inicie o serviço APACHE e MySQL do XAMPP
 - Acesse o localhost
