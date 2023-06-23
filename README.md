@@ -11,15 +11,21 @@ Sistema de anotação de tarefas, com as funcionalidade do (CRUD), feito em arqu
 - Renomeia ele para crud-mvc
 - acesse o arquivo httpd-vhosts.conf do xampp no caminho: C:\xampp\apache\conf\extra
 - copie e cole no final do arquivo essa configuração:
-  
-    <VirtualHost *:80>
-      ServerAdmin user
-      DocumentRoot "C:\xampp\htdocs\crud-mvc"
-      ServerName localhost
-      ErrorLog "C:\xampp\htdocs\crud-mvc\local-error.log"
-      CustomLog "C:\xampp\htdocs\crud-mvc\local-access.log" common	
-    </VirtualHost>
+```
+<VirtualHost *:80>
+ ServerAdmin user
+ DocumentRoot "C:\xampp\htdocs\crud-mvc"
+ ServerName localhost      
+</VirtualHost>
+```
     
 - Inicie o serviço APACHE e MySQL do XAMPP
+- O servidor do seu banco de dados deve estar configurado desta maneira:
+```
+HOSTNAME: localhost
+NOME DA BASE: base
+USER: root
+PASSWORD: ""
+```
 - Copie o script do arquivo create_bd.txt na sua IDE MySQL para a criação do banco de dados do sistema.
 - Acesse o localhost
