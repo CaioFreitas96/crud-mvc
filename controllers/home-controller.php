@@ -7,18 +7,12 @@ class HomeController extends MainController{
 		parent::__construct($parametros);
 	}
 
-	function index(){	
-		echo "<pre>";
-			var_dump($this->nome_modulo);
-		echo "</pre>";
-		
-		
+	function index(){			
 		$tarefas = json_decode($this->modelo->getTarefas());		
 		require_once ABSPATH . '/views/'.$this->nome_view.'/index.php';		
 	}
 
-	function create(){	
-						
+	function create(){							
 		try{
 			if(!isset($_POST['tarefa']) || empty($_POST['tarefa'])){				
 				$retorno['codigo'] = 1;

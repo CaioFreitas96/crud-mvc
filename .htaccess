@@ -1,4 +1,10 @@
 RewriteEngine On
-RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^(.*) ?$
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?path=$1 [QSA,L]
+
+Options -Indexes
+IndexIgnore .htaccess *.php *.js *.css *.htm *.html *.log *.sql *.pdf *.swf *.rtf *.doc *.odt teste.xls
