@@ -1,0 +1,9 @@
+CREATE DATABASE `base`
+
+CREATE TABLE `tarefas` (
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`tarefa` VARCHAR(500) NULL,
+	`alterado_em` DATETIME NULL,
+	`deleted` CHAR(1) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+);
