@@ -20,5 +20,12 @@ Sistema de anotação de tarefas, com as funcionalidade do (CRUD), feito em arqu
 ```
     
 - Inicie o serviço APACHE e MySQL do XAMPP
+- O servidor do seu banco de dados deve estar configurado desta maneira:
+```
+HOSTNAME: localhost
+NOME DA BASE: base
+USER: root
+PASSWORD: ""
+```
 - Copie o script do arquivo create_bd.txt na sua IDE MySQL para a criação do banco de dados do sistema.
 - Acesse o localhost
