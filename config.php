@@ -21,10 +21,10 @@ define( 'URL_SISTEMA', 'http://'.$_SERVER['SERVER_NAME'].'/');
 define( 'TIPO_AMBIENTE', 'homolog');
 
 // CONFIGURAÇÕES BANCO DE DADOS
-define("HOSTNAME", "172.16.10.242");
+define("HOSTNAME", "localhost");
 define("DB_NAME", "base");
 define("DB_USER", "root");
-define("DB_PASSWORD", "m3mSQL@");
+define("DB_PASSWORD", "");
 define("DB_PORT", "");
 define("DB_CHARSET", 'utf8' );
 
